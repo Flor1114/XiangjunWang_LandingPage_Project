@@ -1,0 +1,1043 @@
+/* styles.css */
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./Resources/Fonts/Gilroy-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gilroy regular';
+  src: url('./Resources/Fonts/Gilroy-Regular.otf') format('truetype');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Halyard Display';
+  src: url('./Resources/Fonts/Halyard_Display_Bold.otf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Halyard Display Black';
+  src: url('./Resources/Fonts/Halyard_Display_Black.otf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Halyard Display semiBold';
+  src: url('./Resources/Fonts/HalyardDisplaySemiBold.otf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Halyard Display Medium';
+  src: url('./Resources/Fonts/HalyardDisplaySemiBold.otf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Halyard Display Book';
+  src: url('./Resources/Fonts/Halyard_Display_Book.otf') format('truetype');
+}
+html,body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+p{
+  margin: 0;
+}
+input::placeholder
+{
+  font-family: 'Halyard Display Medium', sans-serif;
+  font-size: 17px;
+}
+.halyardMedium{
+  font-family: 'Halyard Display Medium', sans-serif;
+}
+.halyardBook{
+  font-family: 'Halyard Display Book', sans-serif;
+}
+.halyardSemiBold{
+  font-family: 'Halyard Display semiBold', sans-serif;
+}
+.halyardBold{
+  font-family: 'Halyard Display', sans-serif;
+}
+.halyardBlack{
+  font-family: 'Halyard Display Black', sans-serif;
+}
+.GilroyRegular{
+  font-family: 'Gilroy regular', sans-serif;
+}
+.GilroySemiBold{
+  font-family: 'Gilroy', sans-serif;
+}
+#mediaRate{
+  font-size:25px ;
+}
+#rate{
+  font-size: 68px;
+}
+#twentyFourHour{
+  color: black;
+  font-size: 68px;
+  line-height: 85px;
+  margin: 20px 0px 0 0;
+}
+#emergencyServices{
+  font-size: 25px;
+  line-height: 25px;
+  color: black;
+}
+#rattingAverage{
+  font-size:10px ;
+
+}
+#requestQuote{
+  font-size: 90px;
+  line-height: 80px;
+  padding-bottom: 20px;
+}
+#requestQuoteDetails{
+  padding-top:30px ;
+  font-size: 20px;
+  line-height: 35px;
+  width: 755px;
+
+}
+.header-content{
+  background-color: black;
+  width: 100%;
+  height: 95px;
+  margin-bottom: 10px;
+  position: relative;
+}
+#navTex{
+  font-size: 15px;
+}
+.navBar p,
+nav{
+  transform: skew(10deg);
+}
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 13px;
+  left:100px;
+  width: 300px;
+  height: 70px;
+  background-color: #ccc;
+  border-radius: 23px;
+}
+nav a{
+  margin: 0 10px;
+}
+.navBar div,
+.navBar nav
+{
+display: inline-block;
+}
+.navBar{
+  color: white;
+  float: right;
+  margin: 0 150px 0;
+
+  transform: skew(-10deg);
+}
+.navAction button:nth-child(2){
+  background-color: transparent;
+  border: white solid 1px;
+  margin-left: 20px;
+  padding: 10px 30px;
+  color: white;
+}
+.navAction button:nth-child(1){
+  background-color:#00aeff;
+
+ 
+  padding: 10px 30px;
+  color: white;
+}
+#availableInfo section{
+  margin: 20px 20px;
+  padding: 20px 20px;
+  display: flex;
+  border-left: solid #ccc 1px;
+  border-right: solid #ccc 1px;
+  flex-direction: row;
+  align-items: center;
+}
+.mainContainer{
+  background-color: #f8f8f8;
+}
+.whiteColor{
+  color: white;
+}
+.subContainer{
+  margin:0 140px;
+}
+.about-us{
+  background-image: url('./Resources/Links/plumbing-cost-hydro-blog-cont-img.jpg');
+  position: relative;
+  width: 100%;
+  background-size: 80% 100%;
+}
+.about-us::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* 半透明黑色遮罩 */
+  z-index: 2; /* 确保遮罩层在背景图和before伪元素之上 */
+  }
+.about-us::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 42%; 
+  background-image: url('./Resources/Links/technician-banner.png');
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; 
+  z-index: 4;
+  pointer-events: none;
+}
+.about-us #title
+{
+  font-size: 120px;
+  line-height: 120px;
+  margin: 120px 0 40px 0;
+  
+}
+#title span{
+  display: block;
+  padding: 0 70px 0 20px;
+  clip-path: polygon(0 0, 100% 0, 95% 100%, 0 100%);
+  background-color: #00aeff;
+}
+ul{
+  list-style-type: none;
+  padding: 0 0 80px 0;
+  
+}
+.about-us ul li{
+  font-size: 26px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px 0;
+}
+.about-us ul li p{
+  margin: 0;
+} 
+.about-us ul li img{
+ width: 72px;
+ height: 72px;
+ margin-right: 20px;
+}
+.about-us ul li span{
+  font-size: 16px;
+  display: block;
+  line-height: 10px;
+}
+.ratingContainer{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.poppinsRegular {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400; /* Regular */
+}
+.poppinsBold {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700; /* Bold */
+}
+.poppinsExtraBold {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800; /* Extra Bold */
+}
+.contentContainer{
+  display: flex;
+  flex-direction: row;
+}
+#intro{
+  z-index:3;   
+}
+.intro{
+  background-color: #f1f1f1;
+}
+.rightBottom{
+  position: absolute;
+  bottom: 30px;
+  right: 50px;
+}
+.parallelogramContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+.rightBottom .parallelogramContainer p{
+  transform: skew(10deg);
+  color:white;
+}
+.rightBottom .parallelogramContainer img{
+  transform: skew(10deg);
+}
+.parallelogram{
+  width: 190px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height:215px;
+  transform: skew(-10deg);
+  z-index: 4;
+}
+.parallelogramRed {
+  background:#dd1717;
+}
+.parallelogramBlue {
+  background: #0c6cb9;
+}
+.parallelogramYellow {
+  background: #ffd100;
+}
+.parallelogramLightBlue{
+  background: #00aeff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 303px;
+  height:279px;
+  transform: skew(-5deg);
+}
+.borderParallelogram{
+  background: transparent;
+  width: 256px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height:236px;
+  border: 5px dashed white; 
+}
+
+.borderParallelogram p{
+  transform: skew(5deg);
+  color:white;
+}
+.requestContent{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 0 200px 0;
+}
+.requestContent div{
+  flex:0 0 auto;
+}
+.rightContent{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: auto;
+}
+.blueText{
+  color:#00aeff
+}
+#handPhone{
+  width:340px;
+  height:480px ;
+}
+#money{
+  font-size: 107px;
+  margin: 0;
+  line-height: 128px;
+}
+#moneyInfo{
+  font-size: 30px;
+  margin: 0;
+  line-height: 32px;
+}
+#lockText{
+  font-size: 13px;
+}
+.quoteContainer{
+  position: relative;
+}
+.quoteContent{
+  width: 100%;
+  position: absolute;
+  background-color: white;
+  top: -210px;
+  left: 0;
+}
+#voucher{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 340px;
+  height: 94px;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-170px);
+  background-color: #ffd100;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%); /* 裁剪右下角 */
+}
+#voucher section{
+  flex: 1;
+  margin: 10px;
+}
+.voucherValue{
+  background: transparent;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height:65px;
+  border: 5px dashed white; 
+}
+#off{
+  writing-mode: vertical-lr;
+  transform:rotate(180deg);
+  font-size: 25px;
+}
+#voucherText{
+  font-size: 63px;
+}
+#voucherDollar{
+  font-size: 30px;
+}
+#vocherInfotext{
+  font-size: 28px;
+  line-height: 23px;
+}
+.quoteForm{
+  width: calc(100% - 80px);
+  padding: 40px;
+  /* height: 500px; */
+  display: flex;
+  flex-direction: column;
+}
+
+.formTitle{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.formDetails{
+  display: flex;
+  flex-direction:column;
+}
+.formInfo{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 创建一行四列的网格 */
+  gap: 10px; /* 设置网格项之间的间距 */
+  padding: 20px;
+}
+.formInfo input{
+  padding: 20px;
+  text-align: left;
+  border: 2px solid #ccc; 
+}
+.formInfo button{
+
+  padding: 20px;
+  text-align: center;
+  background-color: #00aeff;
+  color: white;
+}
+.formInfo .middle{
+  grid-column: span 2;
+}
+.textbox {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.plumbingServices{
+  background-color: #f8f8f8;
+}
+.plumbingServicesContainer{
+  padding-top: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.servicesCatrgory{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  grid-template-rows: repeat(2, 1fr); 
+  column-gap: 20px; 
+  grid-row-gap: 40px;
+  padding: 50px;
+}
+.servicesCatrgoryItem {
+  position: relative;
+  background-color: #808080;
+  height: 280px;
+}
+.serviceName{
+  width: 90%;
+  position: absolute;
+  display: flex;
+  flex-direction:row;
+  bottom: 0;
+  left: 0;
+}
+.serviceNameBg{
+display: flex;
+color: white;
+padding:0 0 0 20px;
+align-items: center;
+width: 100%;
+height: 55px;
+background-color: #004881;
+clip-path: polygon(0 0, calc(100% - 30px) 0, 100% 100%, 0 100%);
+}
+#serviceTitle{
+  font-size: 90px;
+  line-height: 130px;
+}
+.brandContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#serviceDes{
+  flex:1 1 auto;
+  font-size: 20px;
+  line-height: 35px;
+}
+#hr{
+  flex:1 1 auto;
+  display: inline-block;
+  border-top: solid 2px rgb(217,217,217);
+  margin:10px 0 0 70px;
+}
+.brandsImgs{
+  width: 100%;
+  display: flex;
+  justify-content:space-between;
+  margin: 40px 0;
+  flex-direction:row;
+}
+.freeQuote{
+  position: relative;
+  border-top: solid 8px white;
+  border-bottom:solid 8px white; ;
+  height: 150px;
+  width: 100%;
+  background-color: #0074ff;  
+}
+.freeQuoteLeft p{
+  padding-top: 25px;
+  color: white;
+}
+.freeQuoteRight{
+ 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 150px;
+  width: 40%;
+  background-color: #004881;
+  clip-path: polygon(5% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 100%);
+}
+.freeQuoteRight button:nth-child(1){
+  border: 2px solid white;
+  color: white;
+}
+.freeQuoteRight button:nth-child(2){
+  background-color: rgb(241,241,241);
+}
+.freeQuoteSmallparallelogram{
+  border: solid 1px white;
+  width: 200px;
+  height:60px;
+  transform: skew(-8deg);
+}
+.freeQuoteSmallparallelogram p{
+  transform: skew(8deg);
+}
+.whatWeDelivery{
+  position: relative;
+  width: 100%;
+  height: 835px;
+  background-color:#f8f8f8 ;
+}
+.whatWeDeliveryright{
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url(./Resources/Links/i\ am\ aplumber.webp);
+  width: 58%;
+  height: 100%;
+  background-repeat: no-repeat;
+  clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+.whatWeDeliveryLeft{
+  position: relative;
+  width: 50%;
+  background-color: #00aeff;
+  height: 100%;
+  clip-path: polygon(0% 0%, 100% 0%, 82.5% 100%, 0% 100%);
+}
+.deliveryContent{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  margin-left: 140px;
+  margin-right: 180px;
+  gap: 40px;
+}
+#devliveryText{
+  font-size: 18px;
+  line-height: 35px;
+}
+.deliveryparallelogramContainer{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.deliveryparallelogram{
+  background: white;
+  display: flex;
+  color: black;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+  width: 311px;
+  height:170px;
+  transform: skew(-8deg);
+}
+.deliveryparallelogramTitle{
+  display: flex;
+  margin: 0 20px;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+}
+.deliveryparallelogramTitle p{
+  color:#00aeff;
+  font-size: 27px;
+  line-height: 24px;
+}
+.deliveryparallelogram p{
+  transform: skew(8deg);
+  margin:5px 20px;
+}
+#deliverTextDes{
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.deliveryparallelogramTitle img{
+  transform: skew(8deg);
+
+}
+.faqs{
+  background-color:#f8f8f8 ;
+  margin: 600px 0 30px  0;
+}
+.faqsContainer{
+  display: flex;
+  gap: 30px;
+
+ 
+  position: relative;
+  flex-direction: column;
+}
+.payment{
+  position: absolute;
+  top:-650px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 800px;
+
+}
+.payTitle{
+  background-color: #004881;
+  height: 380px;
+  width: 100%;
+  display: flex;
+ position: relative;
+}
+.payTitleContent{
+  display: flex;
+  margin:0 100px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.payCard{
+  position: absolute;
+  right: -80px;
+  top: -145px;
+  transform: rotate(-10deg);
+  width: 700px;
+  height:700px;
+}
+.paymentDes{
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.payWays{
+  background-color: white;
+  height: 180px;
+  width: 100%;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+ 
+}
+.payGridBorder{
+  border-left: #004881 solid 2px;
+}
+.payWaysItemContent{
+  height: 60px;
+  display: flex;
+  margin: 0 40px;
+  justify-content: center;
+  align-items: center;
+ gap: 15px;
+  flex-direction: row;
+}
+.payWaysItemDes{
+  display: flex;
+  flex-direction: column;
+}
+#paymentPlan{
+  font-size: 34px;
+  line-height: 35px;
+}
+.paymentBtnBox button{
+  width: 176px;
+  margin-right:10px ;
+  height: 60px;
+  margin-top: 20px;
+}
+.paymentBtnBox button:nth-child(1){
+  border:2px solid white;
+  color:white
+}
+.paymentBtnBox button:nth-child(2){
+background-color: rgb(241,241,241);
+  color:#00aeff
+}
+#repairNow{
+  font-size: 65px;
+  line-height: 80px;
+}
+.circleLogoContainer{
+ margin-right:50px ;
+}
+.circleLogo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 246px;
+  height: 246px;
+  background-color: white; /* 你可以根据需要更改颜色 */
+  border-radius: 50%;
+}
+.faqsQuestionDetails{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3,1r);
+  column-gap: 80px;
+ 
+}
+.faqsQuestionDetailsItem{
+  height: 80px;
+  align-items: center;
+  border-bottom: dashed 2px gray;
+  display: flex;
+  justify-content: space-between;
+}
+.noStyleBtn{
+  background: none;
+  border: none;
+}
+#faqsQuestionDetailsItemText{
+  font-size: 20px;
+}
+.faqsBtun{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  margin: 30px 0;
+}
+.btnParallelogram{
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  width: 170px;
+  height:55px;
+  align-items: center;
+  transform: skew(-8deg);
+}
+.btnParallelogram p{
+  transform: skew(8deg);
+}
+.faqsBtun button:nth-child(2){
+  background-color:#004881;
+}
+.faqsBtun button:nth-child(1){
+  background-color:#00aeff;
+}
+.goal{
+  background-color: rgb(223, 224, 228);
+  padding: 80px 0;
+}
+.goalContainer{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 15%;
+}
+.goalLogo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  height: 320px;
+  background-color: white; /* 你可以根据需要更改颜色 */
+  border-radius: 50%;
+}
+.goalTextContainer{
+  display: flex;
+  flex-direction:column;
+}
+#goalTitle{
+  font-size: 50px;
+  line-height: 55px;
+}
+.goalTextContainer #devliveryText{
+  margin-top: 25px;
+}
+.clientSaid{
+  background-color: rgb(241,241,241)
+}
+.clientSaidContainer{
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.clientSaidinfoContainer{
+  display: flex;
+  margin-top:50px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  text-align: center;
+}
+.clientSaidinfo{
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  color: black;
+  justify-content: center;
+  align-items: center;
+}
+#nameText{
+  font-size: 35px;
+  line-height: 30px;
+}
+#clientDesText{
+  font-size: 17px;
+  line-height: 30px;
+}
+#clientAddressText{
+  font-size: 23px;
+  line-height: 30px;
+}
+.fade-effect {
+  position: relative; 
+  display: inline-block;
+  padding: 20px;
+  background-color: rgb(241,241,241);
+}
+.fade-effect::before, .fade-effect::after { 
+  content: ''; 
+  position: absolute; 
+  top: 0; 
+  bottom: 0; 
+  width: 20%; 
+  pointer-events: none; 
+} 
+.fade-effect::before { 
+  left: 0; 
+  background: linear-gradient(to right, rgba(241, 241, 241, 1), rgba(241, 241, 241, 0)); 
+} 
+.fade-effect::after { 
+    right: 0; 
+    background: linear-gradient(to left, rgba(241, 241, 241, 1), rgba(241, 241, 241, 0)); 
+}
+.bookingContainer{
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  padding: 100px 0;
+  
+}
+.bookingInfoContainer{
+  width: 100%;
+  flex:1;
+  display: flex;
+  flex-direction: column;
+}
+.formContainer{
+  width: 100%;
+  margin-top: 100px;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.formItem{
+  border: 2px solid #ccc;
+  text-align: left;
+  padding: 20px;
+}
+.dobulColums {
+  grid-column: span 2;
+}
+.mapContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 500px;
+  height: 500px;
+  background-color: #808080;
+}
+.noticeContent{
+  margin-top:40px ;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+.formContainer button{
+  text-align: center;
+  color: white;
+  background-color: #00aeff;
+}
+#mapText{
+  font-size: 60px;
+  color: white;
+}
+footer{
+  background-color: rgb(0,51,86);
+  color: white;
+  position: relative;
+}
+.footerContainer{
+  display: flex;
+  flex-direction: column;
+}
+.footerSubContainer{
+  margin: 0 270px 50px 270px;
+}
+.footInfo{
+  display: flex;
+  margin: 90px 0 0 0;
+  flex-direction: row;
+  border-bottom:3px solid rgb(51,92,120) ;
+}
+.footerLogo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:30px ;
+  width: 380px;
+  height: 155px;
+  border-radius: 20px;
+  background-color: #ccc;
+}
+.footerDetails{
+  display: flex;
+  gap: 180px;
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+}
+.severiceBox{
+  display: flex;
+  flex-direction: column;
+}
+.severiceBox ul{
+  padding: 0;
+}
+.severiceBox ul li{
+  margin: 40px 0;
+}
+.footerBtn{
+  background-color: white;
+  padding: 10px;
+  transform: skew(-10deg);
+}
+.severiceBox img{
+  margin-top: 10px;
+}
+.severiceBox button p{
+  transform: skew(10deg);
+}
+.company{
+  display: flex;
+  margin: 40px 0 70px 0;
+  flex: row;
+  justify-content: space-between;
+}
+.companyLogo{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.company p{
+  font-size: 16px;
+}
+#trangle{
+  width: 110px;
+  height: 110px;
+  clip-path: polygon(0 0,100% 100%, 0 100%);
+  position:absolute;
+  top: -110px;
+  background-color: rgb(0,51,86);
+  left: 0;
+}
